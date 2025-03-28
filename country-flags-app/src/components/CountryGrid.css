@@ -1,0 +1,12 @@
+
+
+.grid-thirds {
+    display:grid;
+    justify-content: space-between;
+  }
+  .grid-item {
+    display:inline-flex;
+    width:30%;
+
+  }
+  img{ }
