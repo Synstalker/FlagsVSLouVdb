@@ -1,0 +1,14 @@
+[
+    {
+      "name": "South Africa",
+      "flag": "https://flagcdn.com/za.svg",
+      "population": 59308690,
+      "capital": "Pretoria"
+    },
+    {
+      "name": "United States",
+      "flag": "https://flagcdn.com/us.svg",
+      "population": 331002651,
+      "capital": "Washington, D.C."
+    }
+  ]

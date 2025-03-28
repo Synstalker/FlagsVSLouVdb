@@ -1,0 +1,61 @@
+swagger: '2.0'
+info:
+  version: 2.0
+  title: Country API
+  description: API to retrieve information about countries
+host: localhost:3000
+basePath: /api
+schemes:
+  - http
+produces:
+  - application/json
+paths:
+  /countries:
+    get:
+      summary: Retrieve all countries
+      description: Retrieve a list of all countries with their flags and names
+      responses:
+        '200':
+          description: A list of countries
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Country'
+        '500':
+          description: Failed to fetch countries
+  /countries/{name}:
+    get:
+      summary: Retrieve details about a specific country
+      description: Retrieve details about a specific country by name
+      parameters:
+        - name: name
+          in: path
+          required: true
+          description: The name of the country
+          type: string
+      responses:
+        '200':
+          description: Details of the specified country
+          schema:
+            $ref: '#/definitions/CountryDetails'
+        '404':
+          description: Country not found
+definitions:
+  Country:
+    type: object
+    properties:
+      name:
+        type: string
+      flag:
+        type: string
+  CountryDetails:
+    type: object
+    properties:
+      name:
+        type: string
+      flag:
+        type: string
+      population:
+        type: integer
+      capital:
+        type: string
