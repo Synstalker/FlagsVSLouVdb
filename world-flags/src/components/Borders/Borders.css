@@ -1,0 +1,22 @@
+.container__borders {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__border {
+  margin-top: 1em;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 90rem) {
+  .container__borders {
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+  }
+  .box__border {
+    margin: 0;
+  }
+}

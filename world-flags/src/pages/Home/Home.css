@@ -1,0 +1,9 @@
+.container__content--main {
+  padding: 2em;
+}
+
+@media (min-width: 45rem) {
+  .container__content--main {
+    padding: 4em 6em;
+  }
+}

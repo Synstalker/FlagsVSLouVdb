@@ -1,0 +1,17 @@
+.button__border {
+  cursor: pointer;
+  text-align: center;
+  padding: 0.3em 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8em;
+  box-shadow: 0;
+}
+
+@media (min-width: 90rem) {
+  .button__border {
+    padding: 0.3em 1em;
+  }
+}

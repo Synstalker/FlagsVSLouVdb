@@ -1,0 +1,13 @@
+.container__country--details {
+  padding: 2em;
+}
+
+@media (min-width: 90rem) {
+  .container__country--details {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+}
